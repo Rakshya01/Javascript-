@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var number = prompt("Enter a number");
+      var temp = number;
+      var noOfDigits = number.toString().length;
+      var sum = 0;
+      while (temp > 0) {
+        //153%10=3
+        // console.log(temp);
+        var digit = temp % 10;
+        sum += digit ** noOfDigits;
+        temp = parseInt(temp / 10);
+      }
+      if (sum == number) {
+        console.log(`${number} is an armstrong number`);
+      } else {
+        console.log(`${number} is not an armstrong number`);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- armstrong number:3 digit xa vane , the sum of cubes of each digit is equal
+    to the number itself. for example: 153 is armstrong number because
+    153=1*1*1+5*5*5+3*3*3 -->
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var string = prompt("Enter a string.");
+      const reg = /[aeiou]/gi; //regular expression ho / vitra ko ra bahira ko modifier ho : globally hernu parxa ra case sensitive lai ignore garnu parxa
+
+      var test = string.match(reg); // match chai predefined method ho match garera data return garxa
+      console.log(test.join(","));
+      console.log(test.length);
+    </script>
+  </head>
+  <body>
+    <!-- regex: regex is known as regular expression.
+     it is used to match , test, and find characters from a string.
+     to find vowels: expression:[aeiou]
+                    modifiers: gi(global and case insensitive) -->
+  </body>
+</html>

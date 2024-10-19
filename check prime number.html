@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var number = prompt("Enter a number:");
+      if (number == 1) {
+        console.log(`${number} is neither a prime nor composite number.`);
+      } else if (number < 1) {
+        console.log(`${number} is not a prime number`);
+      } else {
+        //loop
+        //for eg 15 xa teslai 2 dekhi 14 samma kunai la divide hunxa vane not a prime number
+        for (var i = 2; i < number; i++) {
+          if (number % i == 0) {
+            var res = `${number} is not a prime number`;
+            break;
+          } else {
+            var res = `${number} is a prime number`;
+          }
+        }
+        console.log(res);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- prime number: positive integer that is only divisible by 1 and itself. -->
+  </body>
+</html>

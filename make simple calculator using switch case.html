@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var a = prompt("enter 1st number");
+      var b = prompt("enter 2nd number");
+      var opr = prompt("select among +,-,*,/");
+      switch (opr) {
+        //if(opr == "+")
+        case "+":
+          var res = parseFloat(a) + parseFloat(b);
+          console.log(`${a}+${b} = ${res}`);
+          break;
+        case "-":
+          var res = parseFloat(a) - parseFloat(b);
+          console.log(`${a}-${b} = ${res}`);
+          break;
+        case "*":
+          var res = parseFloat(a) * parseFloat(b);
+          console.log(`${a}*${b} = ${res}`);
+          break;
+        case "/":
+          var res = parseFloat(a) / parseFloat(b);
+          console.log(`${a}/${b} = ${res}`);
+          break;
+
+        default:
+          console.log("invalid operator");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- switch case: case break -->
+  </body>
+</html>

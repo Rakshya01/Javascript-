@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var a = prompt("enter a string");
+      var stringArray = a.split("");
+      var stringArrayRev = stringArray.reverse();
+      var join = stringArrayRev.join("");
+
+      if (a == join) {
+        console.log(`${a}: Is palindrome.`);
+      } else {
+        console.log(`${a}: Is not palindrome.`);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- a string is a palindrome if it is read the same from forward or backword.
+    example: dad, madam -->
+    <!-- Array methods to be used:
+     split("") : splits a string and returns array.
+     reverse(): reverse an array
+     join(): join the array elements and returns a string -->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function inspect() {
+        var value = document.getElementById("data").value;
+        if (value % 2 == 0) {
+          res = `${value} It is even number.`;
+        } else {
+          res = `${value} It is odd number`;
+        }
+        document.getElementById("res").innerText = res;
+      }
+      //ternary operator vaneko chai : condition, expressionIfTrue and expressionIfFalse hunxa
+      //let res = value%2 == 0? `${value} It is an even number.`: `${value} It is an odd number.`
+    </script>
+  </head>
+  <body>
+    <!--checking using if-else or ternary operator-->
+    <input type="" name="" id="data" />
+    <button onclick="inspect()">Check</button>
+    <h1 id="res"></h1>
+  </body>
+</html>

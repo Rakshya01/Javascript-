@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function check(p, q, r) {
+        if (p >= q && p >= r) {
+          return p;
+        } else if (q >= p && q >= r) {
+          return q;
+        } else {
+          return r;
+        }
+      }
+      var a = prompt("Enter the first number");
+      var b = prompt("Enter the second number");
+      var c = prompt("Enter the third number");
+      var x = check(a, b, c);
+      //var x = Math.max(a,b,c);
+
+      console.log(`${a},${b},${c}: Largest=${x}`);
+    </script>
+  </head>
+  <body>
+    <!-- using Math.max(): returns the largest number among the provided numbers: syntax: Math.max(1,2,3);
+     using user defined method -->
+  </body>
+</html>

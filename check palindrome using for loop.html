@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var string = prompt("enter a string");
+      var len = string.length;
+      var msg = "It is a palindrome string";
+      for (var i = 0; i < len / 2; i++) {
+        if (string[i] != string[len - 1 - i]) {
+          msg = "it is not a palindrome string.";
+        }
+      }
+      console.log(`${string}: ${msg}`);
+    </script>
+  </head>
+  <body>
+    <!-- here string[len-1-i] : this gives backward string in array form  -->
+    <!-- for loop use garda chai tyo string lai divide garne and compare the letter  -->
+  </body>
+</html>

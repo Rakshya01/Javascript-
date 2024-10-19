@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var a = prompt("please enter 'a' number");
+      var b = prompt("please enter 'b' number");
+      var c = prompt("please enter 'c' number");
+
+      var res1 = a % 10;
+      var res2 = b % 10;
+      var res3 = c % 10;
+
+      if (res1 == res2 && res1 == res3) {
+        console.log(`${a},${b} and ${c} are having the same last digit.`);
+      } else {
+        console.log(`${a},${b} and ${c} are not having the same last digit.`);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- logic chai: sabai number lai 10 la divide garne if the remainder is same
+    then those numbers have same last digit. -->
+  </body>
+</html>
